@@ -3,6 +3,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+from ..utils.mask import normalize_sequence_mask
+
 
 class ODEFunc(nn.Module):
     """
@@ -228,6 +230,14 @@ class ContinuousAttentionSNNODE(nn.Module):
         bsz, t_len, _ = x.shape
         device = x.device
         dtype = x.dtype
+        mask_bt = normalize_sequence_mask(
+            mask,
+            batch_size=bsz,
+            seq_len=t_len,
+            dtype=dtype,
+            device=device,
+            strict=True,
+        )
 
         s = torch.zeros(bsz, self.hidden_dim, device=device, dtype=dtype)
         m_reset = torch.zeros(bsz, self.hidden_dim, device=device, dtype=dtype)
@@ -241,38 +251,43 @@ class ContinuousAttentionSNNODE(nn.Module):
         rate_seq, h_seq = [], []
 
         for t in range(t_len):
-            s, m_local_pre = self.cell(
+            mask_h = mask_bt[:, t].view(bsz, 1)
+            s_prev = s
+            m_reset_prev = m_reset
+            r_prev_old = r_prev
+
+            s_prop, m_local_pre_prop = self.cell(
                 x[:, t],
                 s,
                 m_reset,
                 r_prev,
                 delta_ts[:, t],
             )
+            s = mask_h * s_prop + (1.0 - mask_h) * s_prev
+            m_local_pre = mask_h * m_local_pre_prop + (1.0 - mask_h) * m_reset_prev
             local_mem_list.append(m_local_pre)
             local_dt_list.append(delta_ts[:, t])
 
             mem_hist = torch.stack(local_mem_list, dim=1)  # [B,t+1,H]
             dt_hist = torch.stack(local_dt_list, dim=1)    # [B,t+1]
-            m_pre, _ = self._causal_attention(mem_hist, dt_hist)
+            m_pre_prop, _ = self._causal_attention(mem_hist, dt_hist)
+            m_pre = mask_h * m_pre_prop + (1.0 - mask_h) * m_reset_prev
 
-            rate_t = torch.sigmoid(self.beta_spike * (m_pre - self.threshold))
-            m_reset = m_pre - self.threshold * rate_t
-            r_prev = rate_t
+            rate_prop = torch.sigmoid(self.beta_spike * (m_pre - self.threshold))
+            m_reset_prop = m_pre - self.threshold * rate_prop
+            m_reset = mask_h * m_reset_prop + (1.0 - mask_h) * m_reset_prev
+            r_prev = mask_h * rate_prop + (1.0 - mask_h) * r_prev_old
+            rate_t = mask_h * rate_prop
 
             h_t = torch.cat([m_reset, rate_t], dim=-1)
             h_t = self.dropout(h_t)
-
-            if mask[:, t].dim() == 2:
-                mask_gate = mask[:, t].mean(dim=-1, keepdim=True)
-            else:
-                mask_gate = mask[:, t]
-            h_t = h_t * mask_gate
+            h_t = h_t * mask_h
 
             recon_list.append(self.fc_recon(h_t))
             pred_list.append(self.fc_pred(h_t))
 
-            mem_seq.append(m_pre)
-            mem_reset_seq.append(m_reset)
+            mem_seq.append(m_pre * mask_h)
+            mem_reset_seq.append(m_reset * mask_h)
             rate_seq.append(rate_t)
             h_seq.append(h_t)
 
@@ -283,13 +298,7 @@ class ContinuousAttentionSNNODE(nn.Module):
         rate_seq = torch.stack(rate_seq, dim=1)
         h_seq = torch.stack(h_seq, dim=1)
 
-        if mask is not None:
-            if mask.dim() == 3:
-                valid_time = (mask.mean(dim=-1) > 0).to(dtype=dtype)
-            else:
-                valid_time = (mask > 0).to(dtype=dtype)
-        else:
-            valid_time = torch.ones(bsz, t_len, device=device, dtype=dtype)
+        valid_time = (mask_bt > 0).to(dtype=dtype)
 
         # Detection latent excludes padded time steps. For irregular/Poisson
         # views, delta_ts gives a time-aware weighted mean; for uniform data it

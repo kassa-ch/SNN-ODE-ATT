@@ -34,6 +34,8 @@ class EnhancedSNNLoss(nn.Module):
             return tensor
         if tensor.dim() < 2:
             return tensor
+        if tensor.dim() == 2:
+            return tensor
 
         feat_dim = tensor.shape[-1]
         keep_dim = max(feat_dim - self.position_encoding_dims, 1)
@@ -42,6 +44,10 @@ class EnhancedSNNLoss(nn.Module):
     def _masked_mse(self, pred, target, mask=None):
         err = (pred - target) ** 2
         if mask is not None:
+            if mask.dim() == err.dim() - 1:
+                mask = mask.unsqueeze(-1)
+            if mask.dim() == err.dim() and mask.shape[-1] == 1 and err.shape[-1] != 1:
+                mask = mask.expand_as(err)
             err = err * mask
             denom = mask.sum().clamp_min(1.0)
             return err.sum() / denom
@@ -69,7 +75,12 @@ class EnhancedSNNLoss(nn.Module):
         pred_target = x[:, 1:, :]
 
         if mask is not None:
-            pred_mask = mask[:, 1:, :]
+            if mask.dim() == 3:
+                pred_mask = mask[:, 1:, :]
+            elif mask.dim() == 2:
+                pred_mask = mask[:, 1:]
+            else:
+                raise ValueError(f"Illegal mask shape: {tuple(mask.shape)}")
             return self._masked_mse(pred_input, pred_target, pred_mask)
 
         return self._masked_mse(pred_input, pred_target, None)

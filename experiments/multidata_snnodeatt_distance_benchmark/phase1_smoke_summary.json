@@ -1,0 +1,274 @@
+{
+  "mask_normalizer": {
+    "mask_bt": "PASS",
+    "mask_bt1": "PASS",
+    "legacy_btd": "PASS",
+    "invalid_channel_mask": "PASS_RAISED"
+  },
+  "mini_batch_shape": {
+    "dataset_name": "synthetic_btd",
+    "split": "mixed",
+    "x_shape": [
+      8,
+      14,
+      5
+    ],
+    "mask_shape": [
+      8,
+      14
+    ],
+    "delta_t_shape": [
+      8,
+      14
+    ],
+    "time_shape": [
+      8,
+      14
+    ],
+    "label_shape": [
+      8
+    ],
+    "valid_len_min": 7,
+    "valid_len_max": 14,
+    "padding_tail_check": "PASS",
+    "delta_t_nonnegative": "PASS",
+    "mask_unique_values": [
+      0.0,
+      1.0
+    ]
+  },
+  "forward_shape_smoke": {
+    "mask_BT": {
+      "status": "PASS",
+      "mem_seq": [
+        8,
+        14,
+        12
+      ],
+      "mem_reset_seq": [
+        8,
+        14,
+        12
+      ],
+      "rate_seq": [
+        8,
+        14,
+        12
+      ],
+      "h_seq": [
+        8,
+        14,
+        24
+      ],
+      "padding_hidden_zero": true
+    },
+    "mask_BT1": {
+      "status": "PASS",
+      "mem_seq": [
+        8,
+        14,
+        12
+      ],
+      "mem_reset_seq": [
+        8,
+        14,
+        12
+      ],
+      "rate_seq": [
+        8,
+        14,
+        12
+      ],
+      "h_seq": [
+        8,
+        14,
+        24
+      ],
+      "padding_hidden_zero": true
+    },
+    "legacy_mask_BTD": {
+      "status": "PASS",
+      "mem_seq": [
+        8,
+        14,
+        12
+      ],
+      "mem_reset_seq": [
+        8,
+        14,
+        12
+      ],
+      "rate_seq": [
+        8,
+        14,
+        12
+      ],
+      "h_seq": [
+        8,
+        14,
+        24
+      ],
+      "padding_hidden_zero": true
+    },
+    "loss_mask_BT": {
+      "status": "PASS",
+      "loss_finite": true,
+      "loss_keys": [
+        "pred_loss",
+        "recon_loss",
+        "stability_loss",
+        "total_loss",
+        "weighted_stability"
+      ]
+    }
+  },
+  "hidden_cache_smoke": {
+    "cache_keys": [
+      "delta_t",
+      "h_seq",
+      "label",
+      "mask",
+      "mem_reset_seq",
+      "mem_seq",
+      "pooled_latent",
+      "rate_seq",
+      "sample_id",
+      "split",
+      "time"
+    ],
+    "tensor_shapes": {
+      "mem_seq": [
+        24,
+        14,
+        12
+      ],
+      "mem_reset_seq": [
+        24,
+        14,
+        12
+      ],
+      "rate_seq": [
+        24,
+        14,
+        12
+      ],
+      "h_seq": [
+        24,
+        14,
+        24
+      ],
+      "mask": [
+        24,
+        14
+      ],
+      "delta_t": [
+        24,
+        14
+      ],
+      "time": [
+        24,
+        14
+      ],
+      "pooled_latent": [
+        24,
+        12
+      ],
+      "label": [
+        24
+      ]
+    },
+    "hidden_dtype": "torch.float32",
+    "valid_len_min": 7.0,
+    "valid_len_max": 14.0,
+    "hidden_contains_nan": false,
+    "delta_t_contains_negative": false
+  },
+  "distance_wrapper_toy_metrics": [
+    {
+      "method": "euclidean",
+      "feature_key": "mem_reset_seq",
+      "threshold_source": "val_normal",
+      "reference_source": "train_normal",
+      "threshold_quantile": 0.95,
+      "threshold": 0.5800786763429641,
+      "Accuracy": 0.5,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0,
+      "F2": 0.0,
+      "AUC": 0.5833333333333334,
+      "PR_AUC": 0.7028138528138528,
+      "TP": 0,
+      "FP": 0,
+      "TN": 6,
+      "FN": 6
+    },
+    {
+      "method": "trajectory_mahalanobis",
+      "feature_key": "mem_reset_seq",
+      "threshold_source": "val_normal",
+      "reference_source": "train_normal",
+      "threshold_quantile": 0.95,
+      "threshold": 0.6392651587724686,
+      "Accuracy": 0.6666666666666666,
+      "Precision": 0.6666666666666666,
+      "Recall": 0.6666666666666666,
+      "F1": 0.6666666666666666,
+      "F2": 0.6666666666666666,
+      "AUC": 0.7222222222222222,
+      "PR_AUC": 0.7402777777777777,
+      "TP": 4,
+      "FP": 2,
+      "TN": 4,
+      "FN": 2
+    },
+    {
+      "method": "sobolev_h1",
+      "feature_key": "mem_reset_seq",
+      "threshold_source": "val_normal",
+      "reference_source": "train_normal",
+      "threshold_quantile": 0.95,
+      "threshold": 0.09742630980908867,
+      "Accuracy": 0.5833333333333334,
+      "Precision": 0.6666666666666666,
+      "Recall": 0.3333333333333333,
+      "F1": 0.4444444444444444,
+      "F2": 0.3703703703703703,
+      "AUC": 0.6111111111111112,
+      "PR_AUC": 0.6815175565175565,
+      "TP": 2,
+      "FP": 1,
+      "TN": 5,
+      "FN": 4
+    }
+  ],
+  "prefix_forward_smoke": {
+    "r_0.60": {
+      "status": "PASS",
+      "re_forwarded": true,
+      "prefix_hidden_shape": [
+        8,
+        9,
+        12
+      ],
+      "prefix_mask_shape": [
+        8,
+        9
+      ]
+    },
+    "r_1.00": {
+      "status": "PASS",
+      "re_forwarded": true,
+      "prefix_hidden_shape": [
+        8,
+        14,
+        12
+      ],
+      "prefix_mask_shape": [
+        8,
+        14
+      ]
+    }
+  },
+  "GO_TO_TRAINING": "YES"
+}
