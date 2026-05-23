@@ -42,3 +42,4 @@ experiments/anomaly_score_benchmark/outputs/*.md
 !experiments/anomaly_score_benchmark/outputs/.gitkeep
 experiments/anomaly_score_benchmark/outputs_exp4_local/
 experiments/anomaly_score_benchmark/outputs_exp4_*/
+experiments/multidata_snnodeatt_distance_benchmark/runs/
