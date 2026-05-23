@@ -10,7 +10,7 @@ https://github.com/kassa-ch/SNN-ODE-ATT.git
 main
 
 ## 4. Push ??
-Pending at report creation. See final assistant response or latest git output.
+no - GitHub push did not complete because server lacks configured GitHub authentication and HTTPS push hung/was stopped.
 
 ## 5. ???
 ```text
