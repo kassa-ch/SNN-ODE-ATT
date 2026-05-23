@@ -13,7 +13,7 @@ Initial repository push to `git@github.com:kassa-ch/SNN-ODE-ATT.git` succeeded b
 Real exp4 aligned cache benchmark succeeded.
 
 ## Latest commit
-Will be updated after committing this report.
+f443393b620dc2e37cfe15dd6adc2c6b1bacdbf7
 
 ## Safety
 No private keys, passwords, tokens, raw data, cache files, checkpoint files, or >50MB files are intended for commit.
