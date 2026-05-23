@@ -1,0 +1,409 @@
+[
+  {
+    "category": "linear_prediction",
+    "method": "LinearAR",
+    "target": "src/snnodeatt/models/baselines/linear_ar.py",
+    "status": "copied",
+    "source": "/root/autodl-tmp/wafer_att_ctsr_vca/models/STAT_MODELS.py",
+    "size_bytes": 5129,
+    "lines": 131,
+    "sha256": "6a189a9e521811aabd0dc16541b7cbc239d3a843e09a3615c51867b3e1a6d0c5",
+    "top_candidates": [
+      {
+        "score": 10,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/STAT_MODELS.py",
+        "size_bytes": 5129
+      },
+      {
+        "score": 7,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/demo1.py",
+        "size_bytes": 76376
+      },
+      {
+        "score": 7,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/baseline.py",
+        "size_bytes": 2496
+      },
+      {
+        "score": 5,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/train.py",
+        "size_bytes": 34295
+      },
+      {
+        "score": 5,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/common.py",
+        "size_bytes": 1106
+      }
+    ]
+  },
+  {
+    "category": "sparse_linear",
+    "method": "LassoAR",
+    "target": "src/snnodeatt/models/baselines/lasso_ar.py",
+    "status": "copied",
+    "source": "/root/autodl-tmp/wafer_att_ctsr_vca/models/baseline.py",
+    "size_bytes": 2496,
+    "lines": 92,
+    "sha256": "ea75e39cf45e432d87b74c4a1b6a59d3f7100d99ff5d45f2ceeb884784fa2e78",
+    "top_candidates": [
+      {
+        "score": 10,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/baseline.py",
+        "size_bytes": 2496
+      },
+      {
+        "score": 8,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/STAT_MODELS.py",
+        "size_bytes": 5129
+      },
+      {
+        "score": 7,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/demo1.py",
+        "size_bytes": 76376
+      },
+      {
+        "score": 5,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/train.py",
+        "size_bytes": 34295
+      },
+      {
+        "score": 5,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/common.py",
+        "size_bytes": 1106
+      }
+    ]
+  },
+  {
+    "category": "kernel_method",
+    "method": "KRR",
+    "target": "src/snnodeatt/models/baselines/krr.py",
+    "status": "copied",
+    "source": "/root/autodl-tmp/wafer_att_ctsr_vca/models/baseline.py",
+    "size_bytes": 2496,
+    "lines": 92,
+    "sha256": "ea75e39cf45e432d87b74c4a1b6a59d3f7100d99ff5d45f2ceeb884784fa2e78",
+    "top_candidates": [
+      {
+        "score": 11,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/baseline.py",
+        "size_bytes": 2496
+      },
+      {
+        "score": 7,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/STAT_MODELS.py",
+        "size_bytes": 5129
+      },
+      {
+        "score": 5,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/demo1.py",
+        "size_bytes": 76376
+      },
+      {
+        "score": 5,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/train.py",
+        "size_bytes": 34295
+      },
+      {
+        "score": 5,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/common.py",
+        "size_bytes": 1106
+      }
+    ]
+  },
+  {
+    "category": "functional_statistics",
+    "method": "FPCA",
+    "target": "src/snnodeatt/models/baselines/fpca.py",
+    "status": "copied",
+    "source": "/root/autodl-tmp/wafer_att_ctsr_vca/models/STAT_MODELS.py",
+    "size_bytes": 5129,
+    "lines": 131,
+    "sha256": "6a189a9e521811aabd0dc16541b7cbc239d3a843e09a3615c51867b3e1a6d0c5",
+    "top_candidates": [
+      {
+        "score": 10,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/STAT_MODELS.py",
+        "size_bytes": 5129
+      },
+      {
+        "score": 8,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/baseline.py",
+        "size_bytes": 2496
+      },
+      {
+        "score": 7,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/demo1.py",
+        "size_bytes": 76376
+      },
+      {
+        "score": 5,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/train.py",
+        "size_bytes": 34295
+      },
+      {
+        "score": 5,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/common.py",
+        "size_bytes": 1106
+      }
+    ]
+  },
+  {
+    "category": "integral_trend",
+    "method": "CumInt",
+    "target": "src/snnodeatt/models/baselines/cumulative_integral.py",
+    "status": "copied",
+    "source": "/root/autodl-tmp/wafer_att_ctsr_vca/models/STAT_MODELS.py",
+    "size_bytes": 5129,
+    "lines": 131,
+    "sha256": "6a189a9e521811aabd0dc16541b7cbc239d3a843e09a3615c51867b3e1a6d0c5",
+    "top_candidates": [
+      {
+        "score": 7,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/STAT_MODELS.py",
+        "size_bytes": 5129
+      },
+      {
+        "score": 5,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/demo1.py",
+        "size_bytes": 76376
+      },
+      {
+        "score": 5,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/train.py",
+        "size_bytes": 34295
+      },
+      {
+        "score": 5,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/common.py",
+        "size_bytes": 1106
+      },
+      {
+        "score": 5,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/SNN.py",
+        "size_bytes": 6683
+      }
+    ]
+  },
+  {
+    "category": "spiking_neural_network",
+    "method": "SNN",
+    "target": "src/snnodeatt/models/baselines/snn.py",
+    "status": "copied",
+    "source": "/root/autodl-tmp/wafer_att_ctsr_vca/models/SNN.py",
+    "size_bytes": 6683,
+    "lines": 223,
+    "sha256": "9ade6dabc671f8762d1cd4d597b7103a98f32e99284f9f8141899b691c2a196f",
+    "top_candidates": [
+      {
+        "score": 79,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/SNN.py",
+        "size_bytes": 6683
+      },
+      {
+        "score": 13,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/demo1.py",
+        "size_bytes": 76376
+      },
+      {
+        "score": 12,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/SNN_ODE.py",
+        "size_bytes": 9374
+      },
+      {
+        "score": 10,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/ctsr_vca/scripts/bounded_residual_generator_quick_20260423.py",
+        "size_bytes": 17020
+      },
+      {
+        "score": 10,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/ctsr_vca/scripts/exp3_pchip_viewaware_reference_calibration_20260423.py",
+        "size_bytes": 19215
+      }
+    ]
+  },
+  {
+    "category": "gated_recurrent_network",
+    "method": "GRU",
+    "target": "src/snnodeatt/models/baselines/gru.py",
+    "status": "copied",
+    "source": "/root/autodl-tmp/wafer_att_ctsr_vca/models/RNN_GRU_with_delta_t.py",
+    "size_bytes": 4713,
+    "lines": 134,
+    "sha256": "d86efb20ac068f9befd0669ae30e1a18f34cdc4d6043658263f96a5e7a1267eb",
+    "top_candidates": [
+      {
+        "score": 12,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/RNN_GRU_with_delta_t.py",
+        "size_bytes": 4713
+      },
+      {
+        "score": 10,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/RNN_GRU.py",
+        "size_bytes": 3439
+      },
+      {
+        "score": 9,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/ODE_RNN.py",
+        "size_bytes": 8653
+      },
+      {
+        "score": 9,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/ctsr_vca/scripts/train_bounded_residual_model_20260423.py",
+        "size_bytes": 7492
+      },
+      {
+        "score": 7,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/DF2M.py",
+        "size_bytes": 7200
+      }
+    ]
+  },
+  {
+    "category": "continuous_time_latent_model",
+    "method": "Latent ODE",
+    "target": "src/snnodeatt/models/baselines/latent_ode.py",
+    "status": "copied",
+    "source": "/root/autodl-tmp/wafer_att_ctsr_vca/models/SNN_LatentODE.py",
+    "size_bytes": 5783,
+    "lines": 188,
+    "sha256": "59907b1d2711411cd93e7aad3b540b60f395aa66de1ceac5fa6e17f183ee7757",
+    "top_candidates": [
+      {
+        "score": 144,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/SNN_LatentODE.py",
+        "size_bytes": 5783
+      },
+      {
+        "score": 16,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/model_factory.py",
+        "size_bytes": 14251
+      },
+      {
+        "score": 15,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/config.py",
+        "size_bytes": 20096
+      },
+      {
+        "score": 15,
+        "path": "/root/autodl-tmp/SNNODEATT/src/snnodeatt/utils/legacy_config.py",
+        "size_bytes": 20096
+      },
+      {
+        "score": 12,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/demo1.py",
+        "size_bytes": 76376
+      }
+    ]
+  },
+  {
+    "category": "continuous_time_recurrent_model",
+    "method": "ODERNN",
+    "target": "src/snnodeatt/models/baselines/ode_rnn.py",
+    "status": "copied",
+    "source": "/root/autodl-tmp/wafer_att_ctsr_vca/models/ODE_RNN.py",
+    "size_bytes": 8653,
+    "lines": 261,
+    "sha256": "a021159f2c52b0a66aab5167fbca474e96fd0424a755bc8d467f1b7c7873ff86",
+    "top_candidates": [
+      {
+        "score": 133,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/ODE_RNN.py",
+        "size_bytes": 8653
+      },
+      {
+        "score": 18,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/config.py",
+        "size_bytes": 20096
+      },
+      {
+        "score": 18,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/model_factory.py",
+        "size_bytes": 14251
+      },
+      {
+        "score": 18,
+        "path": "/root/autodl-tmp/SNNODEATT/src/snnodeatt/utils/legacy_config.py",
+        "size_bytes": 20096
+      },
+      {
+        "score": 11,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/RNN_GRU_with_delta_t.py",
+        "size_bytes": 4713
+      }
+    ]
+  },
+  {
+    "category": "probabilistic_latent_factor_model",
+    "method": "DF2M",
+    "target": "src/snnodeatt/models/baselines/df2m.py",
+    "status": "copied",
+    "source": "/root/autodl-tmp/wafer_att_ctsr_vca/models/DF2M.py",
+    "size_bytes": 7200,
+    "lines": 243,
+    "sha256": "5f4c6ad52379cda49acfa19e9f0151b3404882278b01d4eddfa21c7a4ca388bf",
+    "top_candidates": [
+      {
+        "score": 65,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/DF2M.py",
+        "size_bytes": 7200
+      },
+      {
+        "score": 6,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/demo1.py",
+        "size_bytes": 76376
+      },
+      {
+        "score": 5,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/train.py",
+        "size_bytes": 34295
+      },
+      {
+        "score": 5,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/common.py",
+        "size_bytes": 1106
+      },
+      {
+        "score": 5,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/SNN.py",
+        "size_bytes": 6683
+      }
+    ]
+  },
+  {
+    "category": "paper_method",
+    "method": "SNN-ODE",
+    "target": "src/snnodeatt/models/baselines/snn_ode_baseline.py",
+    "status": "copied",
+    "source": "/root/autodl-tmp/wafer_att_ctsr_vca/models/SNN_ODEATT.py",
+    "size_bytes": 10588,
+    "lines": 304,
+    "sha256": "febddf1d868cbd781d4723e1da03b028e0ededdc6491132e458abcc7155ae476",
+    "top_candidates": [
+      {
+        "score": 142,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/SNN_ODEATT.py",
+        "size_bytes": 10588
+      },
+      {
+        "score": 142,
+        "path": "/root/autodl-tmp/SNNODEATT/src/snnodeatt/models/snn_odeatt.py",
+        "size_bytes": 10588
+      },
+      {
+        "score": 135,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/models/SNN_ODE.py",
+        "size_bytes": 9374
+      },
+      {
+        "score": 126,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/scripts/train_snn_odeatt_smoke.py",
+        "size_bytes": 4856
+      },
+      {
+        "score": 125,
+        "path": "/root/autodl-tmp/wafer_att_ctsr_vca/scripts/evaluate_snn_odeatt_layered.py",
+        "size_bytes": 12646
+      }
+    ]
+  }
+]
