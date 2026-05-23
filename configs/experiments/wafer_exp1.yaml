@@ -3,9 +3,9 @@ experiment:
   description: "augmented anomalies, no Poisson"
 dataset:
   name: wafer
-  raw_dir: data/wafer/raw
-  processed_dir: data/wafer/processed
-  manifest_dir: data/wafer/manifests
+  raw_dir: Data/Wafer/exp1/raw
+  processed_dir: Data/Wafer/exp1/processed
+  manifest_dir: Data/Wafer/exp1/manifests
 model:
   config: configs/model/snn_odeatt.yaml
 scoring:

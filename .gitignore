@@ -16,6 +16,11 @@ data/*/raw/*
 data/*/processed/*
 data/*/manifests/*.pt
 data/*/manifests/*.pkl
+Data/**/raw/*
+Data/**/processed/*
+Data/**/manifests/*
+!Data/**/README.md
+!Data/**/.gitkeep
 
 checkpoints/*.pt
 checkpoints/*.pth
@@ -25,6 +30,19 @@ models/*.pth
 results/*
 !results/README.md
 !results/.gitkeep
+!Results/
+!Results/**/
+Results/models/checkpoints/*
+Results/models/best_models/*
+Results/logs/*
+Results/hidden_cache/*
+Results/benchmarks/offline/*
+Results/benchmarks/prefix/*
+Results/benchmarks/distance_ranking/*
+Results/diagnostics/*
+Results/manifests/*
+!Results/**/README.md
+!Results/**/.gitkeep
 
 cache_sinkhorn*/
 logs_sinkhorn*/

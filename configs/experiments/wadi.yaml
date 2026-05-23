@@ -1,7 +1,7 @@
 dataset:
   name: WADI
-  raw_dir: data/WADI/raw
-  processed_dir: data/WADI/processed
+  raw_dir: Data/WADI/raw
+  processed_dir: Data/WADI/processed
   window_size: null
   stride: null
   feature_columns: []

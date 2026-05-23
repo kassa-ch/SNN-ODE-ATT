@@ -1,8 +1,8 @@
 dataset:
   name: ST_AWFD
-  raw_dir: data/ST_AWFD/raw
-  processed_dir: data/ST_AWFD/processed
-  manifest_dir: data/ST_AWFD/manifests
+  raw_dir: Data/ST-AWFD/raw
+  processed_dir: Data/ST-AWFD/processed
+  manifest_dir: Data/ST-AWFD/manifests
   representation: native_or_process_step_btd
   task: wafer_fault_detection
   window_size: null

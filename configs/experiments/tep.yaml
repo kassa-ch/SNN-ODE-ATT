@@ -1,7 +1,7 @@
 dataset:
   name: TEP
-  raw_dir: data/TEP/raw
-  processed_dir: data/TEP/processed
+  raw_dir: Data/TEP/raw
+  processed_dir: Data/TEP/processed
   window_size: null
   stride: null
   feature_columns: []

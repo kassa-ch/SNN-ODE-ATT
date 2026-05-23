@@ -71,7 +71,7 @@ python -m compileall src scripts demos tests
 
 ## Data
 
-Raw HAI, SWaT, WADI, TEP, ST-AWFD, and Bosch Production Line files are not bundled. SWaT/WADI require access through the original providers; Bosch follows Kaggle terms; ST-AWFD follows the provider repository terms. Place raw files under `data/<DATASET>/raw/`, then run the corresponding `scripts/prepare_*.py` script after adapting the field names.
+Raw HAI, SWaT, WADI, TEP, ST-AWFD, and Bosch Production Line files are not bundled. SWaT/WADI require access through the original providers; Bosch follows Kaggle terms; ST-AWFD follows the provider repository terms. Place raw files under `Data/<DATASET>/raw/`, then run the corresponding `scripts/prepare_*.py` script after adapting the field names.
 
 Additional manufacturing-quality datasets:
 

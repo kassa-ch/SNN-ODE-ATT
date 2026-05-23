@@ -1,7 +1,7 @@
 dataset:
   name: HAI
-  raw_dir: data/HAI/raw
-  processed_dir: data/HAI/processed
+  raw_dir: Data/HAI/raw
+  processed_dir: Data/HAI/processed
   window_size: null
   stride: null
   feature_columns: []

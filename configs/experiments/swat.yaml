@@ -1,7 +1,7 @@
 dataset:
   name: SWAT
-  raw_dir: data/SWAT/raw
-  processed_dir: data/SWAT/processed
+  raw_dir: Data/SWaT/raw
+  processed_dir: Data/SWaT/processed
   window_size: null
   stride: null
   feature_columns: []

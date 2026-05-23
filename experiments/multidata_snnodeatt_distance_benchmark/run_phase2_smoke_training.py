@@ -62,13 +62,16 @@ CONFIG = {
 
 
 DATASET_CANDIDATES = [
-    ("wafer", "data/wafer/raw", "data/wafer/processed", "data/wafer/manifests"),
-    ("ST_AWFD", "data/ST_AWFD/raw", "data/ST_AWFD/processed", "data/ST_AWFD/manifests"),
-    ("BoschProductionLine", "data/BoschProductionLine/raw", "data/BoschProductionLine/processed", "data/BoschProductionLine/manifests"),
-    ("HAI", "data/HAI/raw", "data/HAI/processed", "data/HAI/manifests"),
-    ("TEP", "data/TEP/raw", "data/TEP/processed", "data/TEP/manifests"),
-    ("SWaT", "data/SWaT/raw", "data/SWaT/processed", "data/SWaT/manifests"),
-    ("WADI", "data/WADI/raw", "data/WADI/processed", "data/WADI/manifests"),
+    ("wafer_exp1", "Data/Wafer/exp1/raw", "Data/Wafer/exp1/processed", "Data/Wafer/exp1/manifests"),
+    ("wafer_exp2", "Data/Wafer/exp2/raw", "Data/Wafer/exp2/processed", "Data/Wafer/exp2/manifests"),
+    ("wafer_exp3", "Data/Wafer/exp3/raw", "Data/Wafer/exp3/processed", "Data/Wafer/exp3/manifests"),
+    ("wafer_exp4", "Data/Wafer/exp4/raw", "Data/Wafer/exp4/processed", "Data/Wafer/exp4/manifests"),
+    ("ST_AWFD", "Data/ST-AWFD/raw", "Data/ST-AWFD/processed", "Data/ST-AWFD/manifests"),
+    ("BoschProductionLine", "Data/Bosch_Production_Line/raw", "Data/Bosch_Production_Line/processed", "Data/Bosch_Production_Line/manifests"),
+    ("HAI", "Data/HAI/raw", "Data/HAI/processed", "Data/HAI/manifests"),
+    ("TEP", "Data/TEP/raw", "Data/TEP/processed", "Data/TEP/manifests"),
+    ("SWaT", "Data/SWaT/raw", "Data/SWaT/processed", "Data/SWaT/manifests"),
+    ("WADI", "Data/WADI/raw", "Data/WADI/processed", "Data/WADI/manifests"),
 ]
 
 

@@ -1,8 +1,8 @@
 dataset:
   name: BoschProductionLine
-  raw_dir: data/BoschProductionLine/raw
-  processed_dir: data/BoschProductionLine/processed
-  manifest_dir: data/BoschProductionLine/manifests
+  raw_dir: Data/Bosch_Production_Line/raw
+  processed_dir: Data/Bosch_Production_Line/processed
+  manifest_dir: Data/Bosch_Production_Line/manifests
   representation: staged_btd
   task: production_line_quality_anomaly
   window_size: null
