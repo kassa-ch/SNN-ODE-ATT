@@ -1,0 +1,25 @@
+dataset:
+  name: ST_AWFD
+  raw_dir: data/ST_AWFD/raw
+  processed_dir: data/ST_AWFD/processed
+  manifest_dir: data/ST_AWFD/manifests
+  representation: native_or_process_step_btd
+  task: wafer_fault_detection
+  window_size: null
+  stride: null
+  feature_columns: []
+  label_column: target
+  group_id_column: MaterialID
+  time_column: duration_ms
+  stage_column: StepID
+  train_split: train
+  val_split: val
+  test_split: test
+sampling:
+  mode: process_step_or_irregular_time
+  max_len: null
+model:
+  config: configs/model/snn_odeatt.yaml
+notes:
+  source: https://github.com/STMicroelectronics/ST-AWFD
+  btd_semantics: "B=wafer/material, T=ordered observations or process steps, D=process features."

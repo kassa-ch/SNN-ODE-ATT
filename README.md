@@ -71,7 +71,12 @@ python -m compileall src scripts demos tests
 
 ## Data
 
-Raw HAI, SWaT, WADI, and TEP files are not bundled. SWaT/WADI require access through the original providers. Place raw files under `data/<DATASET>/raw/`, then run the corresponding `scripts/prepare_*.py` script after adapting the field names.
+Raw HAI, SWaT, WADI, TEP, ST-AWFD, and Bosch Production Line files are not bundled. SWaT/WADI require access through the original providers; Bosch follows Kaggle terms; ST-AWFD follows the provider repository terms. Place raw files under `data/<DATASET>/raw/`, then run the corresponding `scripts/prepare_*.py` script after adapting the field names.
+
+Additional manufacturing-quality datasets:
+
+- `ST_AWFD`: public semiconductor wafer fault detection data. This is a natural supplement for wafer process monitoring and multivariate coupling anomaly detection.
+- `BoschProductionLine`: production-line quality/failure data. In this repo it is explicitly treated as **staged BTD**, where `T` is the ordered station/stage axis. It is not a native continuous-time curve, but it can be used as a discrete approximation to a functional production profile.
 
 ## Reproduction
 
