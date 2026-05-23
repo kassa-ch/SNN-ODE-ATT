@@ -40,3 +40,5 @@ status_sinkhorn*/
 experiments/anomaly_score_benchmark/outputs/*.csv
 experiments/anomaly_score_benchmark/outputs/*.md
 !experiments/anomaly_score_benchmark/outputs/.gitkeep
+experiments/anomaly_score_benchmark/outputs_exp4_local/
+experiments/anomaly_score_benchmark/outputs_exp4_*/
