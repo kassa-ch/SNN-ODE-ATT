@@ -1,0 +1,16 @@
+name: snn-ode-att
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - pyyaml
+  - tqdm
+  - pytorch
+  - pytest
+  - matplotlib

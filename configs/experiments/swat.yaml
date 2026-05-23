@@ -1,0 +1,16 @@
+dataset:
+  name: SWAT
+  raw_dir: data/SWAT/raw
+  processed_dir: data/SWAT/processed
+  window_size: null
+  stride: null
+  feature_columns: []
+  label_column: label
+  train_split: train
+  val_split: val
+  test_split: test
+sampling:
+  mode: poisson_simulated
+  max_len: null
+model:
+  config: configs/model/snn_odeatt.yaml

@@ -1,0 +1,8 @@
+project:
+  name: SNN-ODE-ATT
+  seed: 42
+  device: cuda
+paths:
+  data_root: data
+  checkpoint_root: checkpoints
+  result_root: results

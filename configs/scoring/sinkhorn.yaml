@@ -1,0 +1,7 @@
+epsilon: 0.05
+lambda_t: 0.1
+prototype_count: 32
+iterations: 300
+cost_mode: mean_hidden_squared
+direction: high
+use_log_domain: true

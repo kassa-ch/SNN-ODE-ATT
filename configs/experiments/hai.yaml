@@ -1,0 +1,16 @@
+dataset:
+  name: HAI
+  raw_dir: data/HAI/raw
+  processed_dir: data/HAI/processed
+  window_size: null
+  stride: null
+  feature_columns: []
+  label_column: label
+  train_split: train
+  val_split: val
+  test_split: test
+sampling:
+  mode: uniform
+  max_len: null
+model:
+  config: configs/model/snn_odeatt.yaml
