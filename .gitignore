@@ -43,3 +43,5 @@ experiments/anomaly_score_benchmark/outputs/*.md
 experiments/anomaly_score_benchmark/outputs_exp4_local/
 experiments/anomaly_score_benchmark/outputs_exp4_*/
 experiments/multidata_snnodeatt_distance_benchmark/runs/
+experiments/multidata_snnodeatt_distance_benchmark/processed_btd/*.pt
+experiments/multidata_snnodeatt_distance_benchmark/processed_btd/*.npz
