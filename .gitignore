@@ -36,3 +36,7 @@ status_sinkhorn*/
 !data/**/.gitkeep
 !checkpoints/README.md
 !checkpoints/.gitkeep
+
+experiments/anomaly_score_benchmark/outputs/*.csv
+experiments/anomaly_score_benchmark/outputs/*.md
+!experiments/anomaly_score_benchmark/outputs/.gitkeep

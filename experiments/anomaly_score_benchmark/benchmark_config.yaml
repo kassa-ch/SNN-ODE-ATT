@@ -1,0 +1,22 @@
+cache_path: null
+output_dir: experiments/anomaly_score_benchmark/outputs
+reference_splits: ["train_normal", "val_normal"]
+eval_splits: ["test_normal", "test_abnormal"]
+threshold_quantile: 0.95
+time_weight: "dt"
+prototype_count: 64
+device: "auto"
+methods:
+  - euclidean
+  - sobolev_h1
+  - sobolev_hminus1
+  - trajectory_mahalanobis
+  - mmd_cov_kernel
+  - energy_distance
+  - trace_distance
+  - qre
+  - von_neumann_entropy
+  - purity
+  - bures
+  - hamiltonian_energy
+  - ode_residual_energy

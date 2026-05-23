@@ -93,3 +93,13 @@ The current wafer experiments found that Mahalanobis/rich global-local scoring i
 ## Citation
 
 Please cite the associated paper once available. Acknowledgements should include the original dataset providers and any required SWaT/WADI access terms.
+
+## Anomaly score benchmark library
+
+This repo includes a CPU-friendly benchmark for comparing hidden-trajectory anomaly scores:
+
+```bash
+python experiments/anomaly_score_benchmark/run_benchmark.py --toy
+```
+
+It currently supports Euclidean latent distance, Sobolev H1, negative Sobolev H-1, trajectory Mahalanobis energy, MMD, Energy distance, quantum-inspired density matrix distances, entropy/purity, Bures distance, Hamiltonian energy, and ODE residual energy. See `docs/anomaly_score_benchmark.md`.
