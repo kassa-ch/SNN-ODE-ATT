@@ -1,0 +1,12 @@
+experiment:
+  name: wafer_exp1
+  description: "augmented anomalies, no Poisson"
+dataset:
+  name: wafer
+  raw_dir: Data/Wafer/exp1/raw
+  processed_dir: Data/Wafer/exp1/processed
+  manifest_dir: Data/Wafer/exp1/manifests
+model:
+  config: Scrips/config/model/snn_odeatt.yaml
+scoring:
+  primary: Scrips/config/scoring/mahalanobis.yaml

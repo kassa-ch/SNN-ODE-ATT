@@ -1,0 +1,16 @@
+dataset:
+  name: WADI
+  raw_dir: Data/WADI/raw
+  processed_dir: Data/WADI/processed
+  window_size: null
+  stride: null
+  feature_columns: []
+  label_column: label
+  train_split: train
+  val_split: val
+  test_split: test
+sampling:
+  mode: poisson_simulated
+  max_len: null
+model:
+  config: Scrips/config/model/snn_odeatt.yaml

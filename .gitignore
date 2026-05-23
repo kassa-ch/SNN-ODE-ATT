@@ -12,48 +12,43 @@ tmp/
 *.log
 .DS_Store
 
-data/*/raw/*
-data/*/processed/*
-data/*/manifests/*.pt
-data/*/manifests/*.pkl
+# data and payloads
 Data/**/raw/*
 Data/**/processed/*
-Data/**/manifests/*
+Data/**/manifests/*.pt
+Data/**/manifests/*.npy
+Data/**/manifests/*.npz
+Data/**/manifests/*.pkl
+Data/**/manifests/*.pth
+Data/**/manifests/*.ckpt
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.pkl
+*.h5
+*.mat
+*.parquet
 !Data/**/README.md
 !Data/**/.gitkeep
 
-checkpoints/*.pt
-checkpoints/*.pth
-checkpoints/*.ckpt
-models/*.pt
-models/*.pth
-results/*
-!results/README.md
-!results/.gitkeep
+# runtime outputs
 !Results/
 !Results/**/
 Results/models/checkpoints/*
 Results/models/best_models/*
 Results/logs/*
 Results/hidden_cache/*
-Results/benchmarks/offline/*
-Results/benchmarks/prefix/*
-Results/benchmarks/distance_ranking/*
-Results/diagnostics/*
-Results/manifests/*
+Results/benchmarks/**/*.pt
+Results/benchmarks/**/*.npy
+Results/benchmarks/**/*.npz
 !Results/**/README.md
 !Results/**/.gitkeep
 
 cache_sinkhorn*/
 logs_sinkhorn*/
 status_sinkhorn*/
-
-!data/**/README.md
-!data/**/download_or_prepare.md
-!data/**/access_instructions.md
-!data/**/.gitkeep
-!checkpoints/README.md
-!checkpoints/.gitkeep
 
 experiments/anomaly_score_benchmark/outputs/*.csv
 experiments/anomaly_score_benchmark/outputs/*.md
@@ -63,3 +58,6 @@ experiments/anomaly_score_benchmark/outputs_exp4_*/
 experiments/multidata_snnodeatt_distance_benchmark/runs/
 experiments/multidata_snnodeatt_distance_benchmark/processed_btd/*.pt
 experiments/multidata_snnodeatt_distance_benchmark/processed_btd/*.npz
+runs/
+hidden_cache/
+checkpoints/

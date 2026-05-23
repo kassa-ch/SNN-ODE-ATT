@@ -27,7 +27,7 @@ Run on the server:
 ```bash
 cd /root/autodl-tmp/SNNODEATT
 git pull origin main
-bash scripts/ops/collect_server_baseline_model_files.sh
+bash Scrips/utils/ops/collect_server_baseline_model_files.sh
 ```
 
 The script will:

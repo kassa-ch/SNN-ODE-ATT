@@ -1,3 +1,3 @@
 # HAI Download / Prepare
 
-Place raw files under `data/HAI/raw/`, then run the corresponding `scripts/prepare_hai.py` after adapting column names.
+Place raw files under `Data/HAI/raw/`, then run `Scrips/data_loader/prepare_hai.py` after adapting column names.

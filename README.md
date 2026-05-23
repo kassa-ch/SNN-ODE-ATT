@@ -63,15 +63,15 @@ S_\varepsilon(Q_i,P_N)=OT_\varepsilon(Q_i,P_N)
 
 ```bash
 pip install -r requirements.txt
-python demos/demo1_wafer_mahalanobis.py --help
-python demos/demo2_wafer_sinkhorn_posthoc.py --help
-python tests/test_sinkhorn.py
+python Detect/demo1/demo1_wafer_mahalanobis.py --help
+python Detect/demo2/demo2_wafer_sinkhorn_posthoc.py --help
+python Scrips/tests/test_sinkhorn.py
 python -m compileall src scripts demos tests
 ```
 
 ## Data
 
-Raw HAI, SWaT, WADI, TEP, ST-AWFD, and Bosch Production Line files are not bundled. SWaT/WADI require access through the original providers; Bosch follows Kaggle terms; ST-AWFD follows the provider repository terms. Place raw files under `Data/<DATASET>/raw/`, then run the corresponding `scripts/prepare_*.py` script after adapting the field names.
+Raw HAI, SWaT, WADI, TEP, ST-AWFD, and Bosch Production Line files are not bundled. SWaT/WADI require access through the original providers; Bosch follows Kaggle terms; ST-AWFD follows the provider repository terms. Place raw files under `Data/<DATASET>/raw/`, then run the corresponding `Scrips/data_loader/prepare_*.py` script after adapting the field names.
 
 Additional manufacturing-quality datasets:
 
@@ -80,7 +80,7 @@ Additional manufacturing-quality datasets:
 
 ## Reproduction
 
-Wafer experiment templates are under `configs/experiments/wafer_exp1.yaml` to `wafer_exp4.yaml`:
+Wafer experiment templates are under `Scrips/config/experiments/wafer_exp1.yaml` to `wafer_exp4.yaml`:
 
 - exp1: augmented anomalies, aligned/non-Poisson view.
 - exp2: original anomalies, aligned/non-Poisson view.

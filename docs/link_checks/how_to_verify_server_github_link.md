@@ -7,7 +7,7 @@ On the server, run:
 ```bash
 cd /root/autodl-tmp/SNNODEATT
 git pull origin main
-bash scripts/ops/check_server_github_link.sh
+bash Scrips/utils/ops/check_server_github_link.sh
 ```
 
 After the server pushes `docs/link_checks/server_to_github_check.md`, run locally:

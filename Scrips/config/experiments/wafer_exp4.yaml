@@ -1,0 +1,12 @@
+experiment:
+  name: wafer_exp4
+  description: "original anomalies + Poisson / M1+M2 exact replay"
+dataset:
+  name: wafer
+  raw_dir: Data/Wafer/exp4/raw
+  processed_dir: Data/Wafer/exp4/processed
+  manifest_dir: Data/Wafer/exp4/manifests
+model:
+  config: Scrips/config/model/snn_odeatt.yaml
+scoring:
+  primary: Scrips/config/scoring/mahalanobis.yaml

@@ -19,7 +19,7 @@ Run on the server:
 ```bash
 cd /root/autodl-tmp/SNNODEATT
 git pull origin main
-bash scripts/ops/audit_server_exp4_diagnostic_files.sh
+bash Scrips/utils/ops/audit_server_exp4_diagnostic_files.sh
 ```
 
 The script will:
