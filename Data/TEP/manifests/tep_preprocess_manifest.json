@@ -5,6 +5,8 @@
   "input_dir": "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset",
   "output_dir": "Data\\TEP\\preprocess_data",
   "processed_output": "Data\\TEP\\processed",
+  "source_repo_path": "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset",
+  "source_files_count": 219,
   "source_files": [
     "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_10_1.xlsx",
     "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_10_10.xlsx",
@@ -1308,23 +1310,78 @@
   ],
   "n_skipped_lfs_pointer_files": 0,
   "n_source_candidate_lfs_pointer_files": 214,
-  "skipped_unreadable_files": [],
-  "n_normal_csv": 0,
-  "n_abnormal_csv": 0,
+  "n_skipped_unreadable_files": 5,
+  "skipped_unreadable_files": [
+    {
+      "path": "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulator\\Mode1SkogeInit.mat",
+      "reason": "read_error:ValueError:no field of name feature_000"
+    },
+    {
+      "path": "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulator\\Mode1xInitial.mat",
+      "reason": "read_error:ValueError:no field of name feature_000"
+    },
+    {
+      "path": "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulator\\Mode3xInitial.mat",
+      "reason": "read_error:ValueError:no field of name feature_000"
+    },
+    {
+      "path": "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulator\\Mode4xInitial.mat",
+      "reason": "read_error:ValueError:no field of name feature_000"
+    },
+    {
+      "path": "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulator\\README.txt",
+      "reason": "unsupported_txt"
+    }
+  ],
+  "n_normal_csv": 606,
+  "n_abnormal_csv": 9350,
   "n_csv_written_this_run": 0,
-  "n_csv_skipped_existing_this_run": 0,
-  "feature_dim_distribution": {},
-  "length_distribution": {},
+  "n_csv_skipped_existing_this_run": 9956,
+  "csv_feature_dim_normalization": {
+    "status": "OK",
+    "max_dim": 42,
+    "n_padded": 0,
+    "original_feature_dim_distribution": {
+      "42": 9956
+    },
+    "invalid_files": [],
+    "policy": "right_zero_padding_to_max_feature_dim"
+  },
+  "feature_dim_distribution": {
+    "42": 9956
+  },
+  "length_distribution": {
+    "49": 1,
+    "57": 203,
+    "128": 9752
+  },
   "window_size": 128,
   "stride": 64,
   "min_window_size": 32,
   "label_rule": {
     "column_rule": "fault_id/label numeric values: 0=normal, >0=abnormal",
     "filename_rule": "normal,nofault,d00,fault0 => normal; fault,d01-d21,fault01,idv => abnormal",
-    "observed": {}
+    "observed": {
+      "filename_or_sheet_abnormal": 9350,
+      "filename_or_sheet_normal": 606
+    }
   },
-  "btd_payload_paths": {},
-  "split_counts": {},
+  "btd_payload_paths": {
+    "uniform": "Data\\TEP\\processed\\tep_uniform_btd.pt",
+    "nonuniform": "Data\\TEP\\processed\\tep_nonuniform_btd.pt"
+  },
+  "split_counts": {
+    "train": {
+      "normal": 364
+    },
+    "val": {
+      "normal": 121
+    },
+    "test": {
+      "abnormal": 9350,
+      "normal": 121
+    }
+  },
   "dependency_status": {
     "numpy": "available",
     "pandas": "available",
@@ -1333,10 +1390,10 @@
     "scipy": "available",
     "torch": "available"
   },
-  "check_only": true,
+  "check_only": false,
   "write_btd_requested": true,
   "seed": 42,
   "val_ratio": 0.2,
   "test_normal_ratio": 0.2,
-  "created_at": "2026-05-24T21:35:09.379907"
+  "created_at": "2026-05-24T22:34:59.222687"
 }

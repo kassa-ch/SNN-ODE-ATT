@@ -146,7 +146,7 @@ def run_smoke(args):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dataset", choices=["HAI", "ST-AWFD"], required=True)
+    parser.add_argument("--dataset", choices=["HAI", "ST-AWFD", "TEP"], required=True)
     parser.add_argument("--view", choices=["uniform", "nonuniform"], required=True)
     parser.add_argument("--data_dir", required=True)
     parser.add_argument("--epochs", type=int, default=1)

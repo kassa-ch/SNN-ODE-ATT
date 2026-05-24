@@ -7,13 +7,27 @@ datasets:
     manifest_dir: Data/TEP/manifests
     uniform:
       config: Scrips/config/experiments/tep_uniform.yaml
-      status: missing_dependency_openpyxl
+      status: preprocessed_ready
+      payload_path: Data/TEP/processed/tep_uniform_btd.pt
     nonuniform:
       config: Scrips/config/experiments/tep_nonuniform.yaml
-      status: missing_dependency_openpyxl
+      status: preprocessed_ready
+      payload_path: Data/TEP/processed/tep_nonuniform_btd.pt
+    payload_path:
+      uniform: Data/TEP/processed/tep_uniform_btd.pt
+      nonuniform: Data/TEP/processed/tep_nonuniform_btd.pt
     raw_search:
-      origin_raw_found: false
+      origin_raw_found: true
+      raw_repo_path: Data/TEP/Origin_Datasets/raw/tennessee-eastman-dataset
+      source_files_count: 219
       source_candidate_count: 219
+      skipped_input_lfs_pointer_files: 0
+      source_candidate_lfs_pointer_files: 214
+      xlsx_pointer_remaining_in_raw_repo: false
+      source_file_summary:
+        xlsx: 214
+        mat: 4
+        txt: 1
       source_candidate_summary:
         xlsx: 214
         mat: 4
@@ -23,6 +37,17 @@ datasets:
         - Data/TEP/tennessee-eastman-dataset-main/tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_10_1.xlsx
         - Data/TEP/tennessee-eastman-dataset-main/tennessee-eastman-dataset-main/simulator/Mode1xInitial.mat
       notes:
-        - "TEP candidates were found in the third-party source package, not under Data/TEP/Origin_Datasets/raw."
-        - "The discovered .xlsx files are Git LFS pointer files in this workspace; copy real raw files into Data/TEP/Origin_Datasets/raw before conversion."
-        - "openpyxl is missing, so Excel conversion is not ready in the current environment."
+        - "Real TEP raw data was cloned under Data/TEP/Origin_Datasets/raw/tennessee-eastman-dataset."
+        - "The raw repo .xlsx files have real XLSX ZIP headers after git lfs pull; pre-existing third-party source candidates still include LFS pointer files."
+        - "openpyxl is available and preprocessing/audit completed successfully."
+    preprocess:
+      manifest: Data/TEP/manifests/tep_preprocess_manifest.json
+      audit: Results/manifests/tep_preprocess_audit.json
+      n_normal_csv: 606
+      n_abnormal_csv: 9350
+      feature_dim_distribution:
+        42: 9956
+      length_distribution:
+        49: 1
+        57: 203
+        128: 9752

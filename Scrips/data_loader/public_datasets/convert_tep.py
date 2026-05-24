@@ -103,7 +103,17 @@ def _is_relative_to(path: Path, parent: Path) -> bool:
 def _discover_external_candidates(input_dir: Path) -> List[Path]:
     if not DATASET_DIR.exists():
         return []
-    return sorted(path for path in _discover_files(DATASET_DIR) if not _is_relative_to(path, input_dir))
+    excluded_roots = [
+        input_dir,
+        DEFAULT_OUTPUT_DIR,
+        DEFAULT_PROCESSED_DIR,
+        DATASET_DIR / "manifests",
+    ]
+    return sorted(
+        path
+        for path in _discover_files(DATASET_DIR)
+        if not any(_is_relative_to(path, root) for root in excluded_roots)
+    )
 
 
 def _infer_time_columns(columns: Iterable[object]) -> List[object]:
@@ -313,6 +323,24 @@ def _read_output_csv_shape(path: Path) -> Optional[Tuple[int, int]]:
         return None
 
 
+def _read_output_csv(path: Path):
+    import numpy as np
+
+    skiprows = _detect_skiprows(path)
+    header = None
+    if skiprows:
+        with path.open("r", encoding="utf-8", errors="replace", newline="") as handle:
+            header = next(csv.reader(handle), None)
+    arr = np.loadtxt(path, delimiter=",", skiprows=skiprows, dtype=float)
+    if arr.ndim == 0:
+        arr = arr.reshape(1, 1)
+    elif arr.ndim == 1:
+        arr = arr.reshape(1, -1)
+    if not header or len(header) != arr.shape[1]:
+        header = [f"feature_{idx:03d}" for idx in range(arr.shape[1])]
+    return header, arr
+
+
 def _scan_output_csvs(output_dir: Path) -> Dict[str, object]:
     normal_paths = sorted(output_dir.glob("*_normal.csv")) if output_dir.exists() else []
     abnormal_paths = sorted(output_dir.glob("*_abnormal.csv")) if output_dir.exists() else []
@@ -329,6 +357,59 @@ def _scan_output_csvs(output_dir: Path) -> Dict[str, object]:
         "n_abnormal_csv": len(abnormal_paths),
         "feature_dim_distribution": dict(sorted(dims.items(), key=lambda item: int(item[0]))),
         "length_distribution": dict(sorted(lengths.items(), key=lambda item: int(item[0]))),
+    }
+
+
+def _normalize_output_csv_feature_dim(output_dir: Path) -> Dict[str, object]:
+    import numpy as np
+
+    csv_paths = sorted(output_dir.glob("*_normal.csv")) + sorted(output_dir.glob("*_abnormal.csv"))
+    if not csv_paths:
+        return {"status": "SKIPPED_EMPTY", "max_dim": None, "n_padded": 0, "original_feature_dim_distribution": {}}
+
+    records = []
+    invalid_files = []
+    original_dims = Counter()
+    for path in csv_paths:
+        try:
+            header, arr = _read_output_csv(path)
+        except Exception as exc:
+            invalid_files.append({"path": str(path), "reason": f"{type(exc).__name__}:{exc}"})
+            continue
+        original_dims[str(arr.shape[1])] += 1
+        records.append((path, header, arr))
+
+    if not records:
+        return {
+            "status": "NO_VALID_CSV",
+            "max_dim": None,
+            "n_padded": 0,
+            "original_feature_dim_distribution": dict(original_dims),
+            "invalid_files": invalid_files,
+        }
+
+    max_dim = max(arr.shape[1] for _, _, arr in records)
+    n_padded = 0
+    for path, header, arr in records:
+        dim = arr.shape[1]
+        if dim == max_dim:
+            continue
+        pad_width = max_dim - dim
+        if pad_width < 0:
+            invalid_files.append({"path": str(path), "reason": f"dim_gt_max:{dim}>{max_dim}"})
+            continue
+        padded = np.pad(arr, ((0, 0), (0, pad_width)), mode="constant", constant_values=0.0)
+        padded_header = list(header) + [f"pad_feature_{idx:03d}" for idx in range(dim, max_dim)]
+        _write_matrix_csv(path, padded_header, padded, overwrite=True)
+        n_padded += 1
+
+    return {
+        "status": "OK" if not invalid_files else "ISSUES_FOUND",
+        "max_dim": int(max_dim),
+        "n_padded": int(n_padded),
+        "original_feature_dim_distribution": dict(sorted(original_dims.items(), key=lambda item: int(item[0]))),
+        "invalid_files": invalid_files,
+        "policy": "right_zero_padding_to_max_feature_dim",
     }
 
 
@@ -466,7 +547,8 @@ def _make_uniform_payload(samples: Sequence[WindowSample], splits: Sequence[str]
     import torch
 
     max_t = max(sample.matrix.shape[0] for sample in samples)
-    dim = samples[0].matrix.shape[1]
+    dim = max(sample.matrix.shape[1] for sample in samples)
+    original_dims = Counter(str(sample.matrix.shape[1]) for sample in samples)
     x = np.zeros((len(samples), max_t, dim), dtype=np.float32)
     mask = np.zeros((len(samples), max_t), dtype=np.float32)
     delta_t = np.zeros((len(samples), max_t), dtype=np.float32)
@@ -475,7 +557,8 @@ def _make_uniform_payload(samples: Sequence[WindowSample], splits: Sequence[str]
 
     for idx, sample in enumerate(samples):
         rows = sample.matrix.shape[0]
-        x[idx, :rows, :] = sample.matrix.astype(np.float32)
+        cols = sample.matrix.shape[1]
+        x[idx, :rows, :cols] = sample.matrix.astype(np.float32)
         mask[idx, :rows] = 1.0
         delta_t[idx, :rows] = 1.0
         time[idx, :rows] = np.arange(rows, dtype=np.float32)
@@ -494,6 +577,8 @@ def _make_uniform_payload(samples: Sequence[WindowSample], splits: Sequence[str]
             "n_samples": len(samples),
             "max_length": max_t,
             "feature_dim": dim,
+            "feature_dim_policy": "max_feature_dim_with_right_zero_padding_for_smaller_D",
+            "original_feature_dim_distribution": dict(sorted(original_dims.items(), key=lambda item: int(item[0]))),
             "label_meaning": {"0": "normal", "1": "abnormal"},
             "source_files": sorted({sample.source_path for sample in samples}),
         },
@@ -506,7 +591,8 @@ def _make_nonuniform_payload(samples: Sequence[WindowSample], splits: Sequence[s
 
     rng = np.random.default_rng(seed)
     max_t = max(sample.matrix.shape[0] for sample in samples)
-    dim = samples[0].matrix.shape[1]
+    dim = max(sample.matrix.shape[1] for sample in samples)
+    original_dims = Counter(str(sample.matrix.shape[1]) for sample in samples)
     x = np.zeros((len(samples), max_t, dim), dtype=np.float32)
     mask = np.zeros((len(samples), max_t), dtype=np.float32)
     delta_t = np.zeros((len(samples), max_t), dtype=np.float32)
@@ -520,7 +606,8 @@ def _make_nonuniform_payload(samples: Sequence[WindowSample], splits: Sequence[s
             keep[0] = True
             keep[-1] = True
         kept_positions = np.flatnonzero(keep)
-        x[idx, kept_positions, :] = sample.matrix[kept_positions].astype(np.float32)
+        cols = sample.matrix.shape[1]
+        x[idx, kept_positions, :cols] = sample.matrix[kept_positions].astype(np.float32)
         mask[idx, kept_positions] = 1.0
         time[idx, kept_positions] = kept_positions.astype(np.float32)
         previous = None
@@ -542,6 +629,8 @@ def _make_nonuniform_payload(samples: Sequence[WindowSample], splits: Sequence[s
             "n_samples": len(samples),
             "max_length": max_t,
             "feature_dim": dim,
+            "feature_dim_policy": "max_feature_dim_with_right_zero_padding_for_smaller_D",
+            "original_feature_dim_distribution": dict(sorted(original_dims.items(), key=lambda item: int(item[0]))),
             "label_meaning": {"0": "normal", "1": "abnormal"},
             "sampling": "Bernoulli thinning over observed uniform grid; labels unchanged.",
             "source_files": sorted({sample.source_path for sample in samples}),
@@ -682,6 +771,10 @@ def convert_tep(args: argparse.Namespace) -> Dict[str, object]:
             except Exception as exc:
                 skipped_unreadable_files.append({"path": str(path), "reason": f"read_error:{type(exc).__name__}:{exc}"})
 
+    csv_feature_dim_normalization = {"status": "SKIPPED_CHECK_ONLY" if args.check_only else "SKIPPED_NO_SAMPLES"}
+    if not args.check_only and samples:
+        csv_feature_dim_normalization = _normalize_output_csv_feature_dim(output_dir)
+
     btd_payload_paths: Dict[str, str] = {}
     split_counts: Dict[str, Dict[str, int]] = {}
     if args.write_btd and not args.check_only and samples:
@@ -706,17 +799,21 @@ def convert_tep(args: argparse.Namespace) -> Dict[str, object]:
         "input_dir": str(input_dir),
         "output_dir": str(output_dir),
         "processed_output": str(processed_output),
+        "source_repo_path": str(input_dir) if (input_dir / ".git").exists() else None,
+        "source_files_count": len(source_files),
         "source_files": [str(path) for path in source_files],
         "source_candidate_paths": [str(path) for path in external_candidates],
         "skipped_lfs_pointer_files": skipped_lfs_pointer_files,
         "source_candidate_lfs_pointer_files": source_candidate_lfs_pointer_files,
         "n_skipped_lfs_pointer_files": len(skipped_lfs_pointer_files),
         "n_source_candidate_lfs_pointer_files": len(source_candidate_lfs_pointer_files),
+        "n_skipped_unreadable_files": len(skipped_unreadable_files),
         "skipped_unreadable_files": skipped_unreadable_files,
         "n_normal_csv": output_scan["n_normal_csv"],
         "n_abnormal_csv": output_scan["n_abnormal_csv"],
         "n_csv_written_this_run": int(sum(counters["csv_written"].values())),
         "n_csv_skipped_existing_this_run": int(sum(counters["csv_skipped_existing"].values())),
+        "csv_feature_dim_normalization": csv_feature_dim_normalization,
         "feature_dim_distribution": output_scan["feature_dim_distribution"],
         "length_distribution": output_scan["length_distribution"],
         "window_size": int(args.window_size),
