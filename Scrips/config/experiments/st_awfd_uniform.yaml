@@ -1,0 +1,15 @@
+dataset_name: ST-AWFD
+data_dir: Data/ST-AWFD/preprocess_data
+sampling_view: uniform
+apply_poisson_sampling: false
+input_dim_policy: infer_from_loader
+label_pattern:
+  normal: "*_normal.csv"
+  abnormal: "*_abnormal.csv"
+train_policy:
+  train: normal only
+  val: normal only
+  test: normal + abnormal
+notes: >
+  Public ST-AWFD preprocessed dataset. Each MaterialID sequence is one [T,D]
+  sample. The dataloader appends two positional encoding dimensions.

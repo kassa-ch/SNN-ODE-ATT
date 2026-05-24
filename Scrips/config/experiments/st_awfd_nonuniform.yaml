@@ -1,0 +1,15 @@
+dataset_name: ST-AWFD
+data_dir: Data/ST-AWFD/preprocess_data
+sampling_view: nonuniform
+apply_poisson_sampling: true
+input_dim_policy: infer_from_loader
+label_pattern:
+  normal: "*_normal.csv"
+  abnormal: "*_abnormal.csv"
+train_policy:
+  train: normal only
+  val: normal only
+  test: normal + abnormal
+notes: >
+  Public ST-AWFD preprocessed dataset with Poisson/nonuniform sampling enabled
+  at loader time. Input dimension is inferred from a dataloader batch.

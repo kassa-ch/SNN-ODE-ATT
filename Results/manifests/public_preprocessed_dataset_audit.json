@@ -1,0 +1,211 @@
+{
+  "created_at": "2026-05-24T20:37:10.773164",
+  "check_only": true,
+  "shape_contract": "CSV [T,D] -> TimeSeriesDataset adds 2 positional dims -> batch [B,T,D+2]",
+  "datasets": [
+    {
+      "dataset": "HAI",
+      "data_dir": "Data/HAI/preprocess_data",
+      "status": "passed",
+      "normal_count": 17811,
+      "abnormal_count": 300,
+      "total_csv": 18111,
+      "nan_or_inf_found": false,
+      "invalid_files": [],
+      "t_distribution": {
+        "128": 18111
+      },
+      "d_distribution": {
+        "85": 18111
+      },
+      "batch_shape_uniform": {
+        "x": [
+          2,
+          128,
+          87
+        ],
+        "mask": [
+          2,
+          128,
+          87
+        ],
+        "delta_t": [
+          2,
+          128
+        ],
+        "files": [
+          "hai_000000_normal.csv",
+          "hai_000001_normal.csv"
+        ]
+      },
+      "notes": []
+    },
+    {
+      "dataset": "ST-AWFD",
+      "data_dir": "Data/ST-AWFD/preprocess_data",
+      "status": "passed",
+      "normal_count": 5909,
+      "abnormal_count": 376,
+      "total_csv": 6285,
+      "nan_or_inf_found": false,
+      "invalid_files": [],
+      "t_distribution": {
+        "2": 1,
+        "3": 1,
+        "8": 1,
+        "9": 2,
+        "13": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "26": 1,
+        "30": 2,
+        "33": 3,
+        "35": 1,
+        "37": 1,
+        "41": 1,
+        "42": 1,
+        "43": 1,
+        "45": 1,
+        "47": 1,
+        "48": 1,
+        "50": 1,
+        "53": 1,
+        "57": 1,
+        "58": 1,
+        "60": 1,
+        "63": 1,
+        "65": 1,
+        "67": 1,
+        "68": 1,
+        "69": 1,
+        "73": 1,
+        "74": 1,
+        "75": 1,
+        "77": 2,
+        "78": 1,
+        "80": 1,
+        "84": 1,
+        "87": 1,
+        "91": 1,
+        "93": 1,
+        "97": 1,
+        "98": 1,
+        "99": 1,
+        "100": 1,
+        "101": 5,
+        "102": 2,
+        "103": 8,
+        "104": 19,
+        "105": 19,
+        "106": 25,
+        "107": 8,
+        "108": 15,
+        "109": 19,
+        "110": 968,
+        "111": 99,
+        "112": 12,
+        "113": 1,
+        "114": 6,
+        "115": 37,
+        "116": 100,
+        "117": 764,
+        "118": 2954,
+        "119": 948,
+        "120": 173,
+        "121": 37,
+        "122": 12,
+        "123": 5,
+        "134": 1
+      },
+      "d_distribution": {
+        "22": 6285
+      },
+      "batch_shape_uniform": {
+        "x": [
+          2,
+          118,
+          24
+        ],
+        "mask": [
+          2,
+          118,
+          24
+        ],
+        "delta_t": [
+          2,
+          118
+        ],
+        "files": [
+          "st_awfd_D1_0_087_normal.csv",
+          "st_awfd_D1_1000_271_normal.csv"
+        ]
+      },
+      "notes": []
+    },
+    {
+      "dataset": "TEP",
+      "data_dir": "Data/TEP/preprocess_data",
+      "status": "missing",
+      "normal_count": 0,
+      "abnormal_count": 0,
+      "total_csv": 0,
+      "nan_or_inf_found": false,
+      "invalid_files": [],
+      "t_distribution": {},
+      "d_distribution": {},
+      "batch_shape_uniform": null,
+      "notes": [
+        "no CSV files found"
+      ]
+    },
+    {
+      "dataset": "SWaT",
+      "data_dir": "Data/SWaT/preprocess_data",
+      "status": "missing",
+      "normal_count": 0,
+      "abnormal_count": 0,
+      "total_csv": 0,
+      "nan_or_inf_found": false,
+      "invalid_files": [],
+      "t_distribution": {},
+      "d_distribution": {},
+      "batch_shape_uniform": null,
+      "notes": [
+        "preprocess_data directory missing"
+      ]
+    },
+    {
+      "dataset": "WADI",
+      "data_dir": "Data/WADI/preprocess_data",
+      "status": "missing",
+      "normal_count": 0,
+      "abnormal_count": 0,
+      "total_csv": 0,
+      "nan_or_inf_found": false,
+      "invalid_files": [],
+      "t_distribution": {},
+      "d_distribution": {},
+      "batch_shape_uniform": null,
+      "notes": [
+        "preprocess_data directory missing"
+      ]
+    },
+    {
+      "dataset": "Bosch",
+      "data_dir": "Data/Bosch/preprocess_data",
+      "status": "missing",
+      "normal_count": 0,
+      "abnormal_count": 0,
+      "total_csv": 0,
+      "nan_or_inf_found": false,
+      "invalid_files": [],
+      "t_distribution": {},
+      "d_distribution": {},
+      "batch_shape_uniform": null,
+      "notes": [
+        "preprocess_data directory missing"
+      ]
+    }
+  ]
+}

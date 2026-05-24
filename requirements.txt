@@ -1,0 +1,10 @@
+# Draft dependency list inferred from Python imports. Pin versions after a known-good environment is confirmed.
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+scikit-learn
+torch
+torchdiffeq
+pyro-ppl

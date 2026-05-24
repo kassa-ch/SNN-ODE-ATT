@@ -1,0 +1,16 @@
+dataset_name: HAI
+data_dir: Data/HAI/preprocess_data
+sampling_view: uniform
+apply_poisson_sampling: false
+input_dim_policy: infer_from_loader
+label_pattern:
+  normal: "*_normal.csv"
+  abnormal: "*_abnormal.csv"
+train_policy:
+  train: normal only
+  val: normal only
+  test: normal + abnormal
+notes: >
+  Public HAI preprocessed dataset. Each CSV stores one [T,D] sample. The
+  dataloader appends two positional encoding dimensions, so input_dim must be
+  inferred from the loader instead of hard-coded.

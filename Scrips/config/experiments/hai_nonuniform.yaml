@@ -1,0 +1,16 @@
+dataset_name: HAI
+data_dir: Data/HAI/preprocess_data
+sampling_view: nonuniform
+apply_poisson_sampling: true
+input_dim_policy: infer_from_loader
+label_pattern:
+  normal: "*_normal.csv"
+  abnormal: "*_abnormal.csv"
+train_policy:
+  train: normal only
+  val: normal only
+  test: normal + abnormal
+notes: >
+  Public HAI preprocessed dataset with Poisson/nonuniform sampling enabled at
+  loader time. Do not hard-code input_dim because positional encoding is added
+  after reading each CSV.

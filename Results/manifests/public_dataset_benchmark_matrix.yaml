@@ -1,0 +1,28 @@
+datasets:
+  TEP:
+    dataset_name: TEP
+    origin_dir: Data/TEP/Origin_Datasets
+    raw_dir: Data/TEP/Origin_Datasets/raw
+    preprocess_dir: Data/TEP/preprocess_data
+    manifest_dir: Data/TEP/manifests
+    uniform:
+      config: Scrips/config/experiments/tep_uniform.yaml
+      status: missing_dependency_openpyxl
+    nonuniform:
+      config: Scrips/config/experiments/tep_nonuniform.yaml
+      status: missing_dependency_openpyxl
+    raw_search:
+      origin_raw_found: false
+      source_candidate_count: 219
+      source_candidate_summary:
+        xlsx: 214
+        mat: 4
+        txt: 1
+      representative_source_candidate_paths:
+        - Data/TEP/tennessee-eastman-dataset-main/tennessee-eastman-dataset-main/simulations/mode_1/mode1_normal_50.xlsx
+        - Data/TEP/tennessee-eastman-dataset-main/tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_10_1.xlsx
+        - Data/TEP/tennessee-eastman-dataset-main/tennessee-eastman-dataset-main/simulator/Mode1xInitial.mat
+      notes:
+        - "TEP candidates were found in the third-party source package, not under Data/TEP/Origin_Datasets/raw."
+        - "The discovered .xlsx files are Git LFS pointer files in this workspace; copy real raw files into Data/TEP/Origin_Datasets/raw before conversion."
+        - "openpyxl is missing, so Excel conversion is not ready in the current environment."

@@ -1,0 +1,1342 @@
+{
+  "dataset_name": "TEP",
+  "status": "OK",
+  "raw_readiness": "READY",
+  "input_dir": "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset",
+  "output_dir": "Data\\TEP\\preprocess_data",
+  "processed_output": "Data\\TEP\\processed",
+  "source_files": [
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_10_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_10_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_10_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_10_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_10_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_10_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_10_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_10_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_10_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_10_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_11_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_11_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_11_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_11_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_11_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_11_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_11_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_11_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_11_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_11_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_12_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_12_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_12_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_12_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_12_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_12_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_12_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_12_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_12_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_12_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_13_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_13_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_13_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_13_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_13_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_13_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_13_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_13_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_13_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_13_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_14_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_14_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_14_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_14_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_14_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_14_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_14_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_14_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_14_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_14_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_15_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_15_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_15_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_15_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_15_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_15_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_15_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_15_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_15_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_15_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_16_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_16_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_16_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_16_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_16_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_16_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_16_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_16_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_16_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_16_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_17_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_17_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_17_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_17_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_17_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_17_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_17_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_17_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_17_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_17_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_18_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_18_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_18_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_18_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_18_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_18_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_18_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_18_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_18_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_18_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_19_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_19_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_19_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_19_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_19_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_19_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_19_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_19_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_19_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_19_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_1_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_1_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_1_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_1_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_1_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_1_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_1_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_1_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_1_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_1_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_20_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_20_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_20_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_20_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_20_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_20_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_20_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_20_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_20_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_20_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_21_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_21_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_21_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_21_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_21_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_21_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_21_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_21_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_21_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_21_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_2_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_2_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_2_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_2_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_2_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_2_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_2_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_2_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_2_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_2_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_3_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_3_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_3_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_3_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_3_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_3_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_3_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_3_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_3_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_3_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_4_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_4_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_4_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_4_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_4_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_4_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_4_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_4_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_4_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_4_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_5_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_5_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_5_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_5_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_5_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_5_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_5_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_5_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_5_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_5_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_6_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_6_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_6_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_6_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_6_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_6_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_6_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_6_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_6_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_6_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_7_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_7_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_7_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_7_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_7_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_7_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_7_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_7_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_7_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_7_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_8_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_8_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_8_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_8_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_8_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_8_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_8_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_8_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_8_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_8_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_9_1.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_9_10.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_9_2.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_9_3.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_9_4.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_9_5.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_9_6.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_9_7.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_9_8.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\faults\\mode1_9_9.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\mode1_normal_50.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_1\\mode1_normal_500.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_3\\mode3_normal_50.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulations\\mode_4\\mode4_normal_50.xlsx",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulator\\Mode1SkogeInit.mat",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulator\\Mode1xInitial.mat",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulator\\Mode3xInitial.mat",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulator\\Mode4xInitial.mat",
+    "Data\\TEP\\Origin_Datasets\\raw\\tennessee-eastman-dataset\\simulator\\README.txt"
+  ],
+  "source_candidate_paths": [
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_1.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_10.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_2.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_3.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_4.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_5.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_6.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_7.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_8.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_9.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\mode1_normal_50.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\mode1_normal_500.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_3\\mode3_normal_50.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_4\\mode4_normal_50.xlsx",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulator\\Mode1SkogeInit.mat",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulator\\Mode1xInitial.mat",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulator\\Mode3xInitial.mat",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulator\\Mode4xInitial.mat",
+    "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulator\\README.txt"
+  ],
+  "skipped_lfs_pointer_files": [],
+  "source_candidate_lfs_pointer_files": [
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_10_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_11_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_12_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_13_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_14_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_15_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_16_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_17_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_18_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_19_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_1_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_20_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_21_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_2_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_3_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_4_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_5_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_6_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_7_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_8_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_1.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_10.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_2.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_3.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_4.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_5.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_6.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_7.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_8.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\faults\\mode1_9_9.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\mode1_normal_50.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_1\\mode1_normal_500.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_3\\mode3_normal_50.xlsx",
+      "scope": "source_candidate"
+    },
+    {
+      "path": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\TEP\\tennessee-eastman-dataset-main\\tennessee-eastman-dataset-main\\simulations\\mode_4\\mode4_normal_50.xlsx",
+      "scope": "source_candidate"
+    }
+  ],
+  "n_skipped_lfs_pointer_files": 0,
+  "n_source_candidate_lfs_pointer_files": 214,
+  "skipped_unreadable_files": [],
+  "n_normal_csv": 0,
+  "n_abnormal_csv": 0,
+  "n_csv_written_this_run": 0,
+  "n_csv_skipped_existing_this_run": 0,
+  "feature_dim_distribution": {},
+  "length_distribution": {},
+  "window_size": 128,
+  "stride": 64,
+  "min_window_size": 32,
+  "label_rule": {
+    "column_rule": "fault_id/label numeric values: 0=normal, >0=abnormal",
+    "filename_rule": "normal,nofault,d00,fault0 => normal; fault,d01-d21,fault01,idv => abnormal",
+    "observed": {}
+  },
+  "btd_payload_paths": {},
+  "split_counts": {},
+  "dependency_status": {
+    "numpy": "available",
+    "pandas": "available",
+    "openpyxl": "available",
+    "xlrd": "missing",
+    "scipy": "available",
+    "torch": "available"
+  },
+  "check_only": true,
+  "write_btd_requested": true,
+  "seed": 42,
+  "val_ratio": 0.2,
+  "test_normal_ratio": 0.2,
+  "created_at": "2026-05-24T21:35:09.379907"
+}

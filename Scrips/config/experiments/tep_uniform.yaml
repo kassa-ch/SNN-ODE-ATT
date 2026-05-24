@@ -1,0 +1,16 @@
+dataset_name: TEP
+data_dir: Data/TEP/preprocess_data
+origin_dir: Data/TEP/Origin_Datasets
+manifest_dir: Data/TEP/manifests
+sampling_view: uniform
+apply_poisson_sampling: false
+label_pattern:
+  normal: "*_normal.csv"
+  abnormal: "*_abnormal.csv"
+input_dim_policy: infer_from_loader
+train_policy:
+  train: normal_only
+  val: normal_only
+  test: normal_plus_abnormal
+notes:
+  - "TEP public dataset has native abnormal/fault labels; no augmented anomalies are used."

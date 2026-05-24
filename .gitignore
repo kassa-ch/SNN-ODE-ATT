@@ -1,0 +1,96 @@
+# Python caches and virtual environments
+__pycache__/
+*.pyc
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Secrets and local credentials
+.env*
+secrets/
+*.key
+*.pem
+*.ppk
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# Local datasets and generated dataset payloads
+Data/**
+!Data/
+!Data/**/
+!Data/**/.gitkeep
+Data/**/Origin_Datasets/
+Data/**/preprocess_data/
+Data/**/processed/
+Data/**/*.pt
+Data/**/*.pth
+Data/**/*.npy
+Data/**/*.npz
+!Data/*/README.md
+!Data/*/manifests/
+!Data/*/manifests/*.json
+origin_samples/**
+
+# Training checkpoints, caches, and generated arrays
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.onnx
+
+# Local and server-returned heavy result payloads
+Results/models/checkpoints/
+Results/models/best_models/
+Results/hidden_cache/
+Results/benchmarks/**/raw/
+Results/benchmarks/**/*smoke*.csv
+Results/benchmarks/**/*smoking*.csv
+Results/saved_models/
+saved_models/
+logs/
+detection_logs/
+score_plots/
+score_results/
+train_scores/
+results/
+
+# Lightweight result artifacts that are allowed in Git
+!Results/
+!Results/manifests/
+!Results/manifests/**/*.yaml
+!Results/manifests/**/*.yml
+!Results/manifests/**/*.json
+!Results/manifests/**/*.md
+!Results/manifests/**/*.txt
+!Results/reports/
+!Results/reports/*.md
+!Results/tables/
+!Results/tables/*.csv
+!Results/**/*.gitkeep
+
+# Logs and process output
+*.log
+*.out
+*.err
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.bz2
+*.xz
+*.7z
+*.rar

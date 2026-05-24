@@ -1,0 +1,36 @@
+{
+  "dataset_name": "TEP",
+  "status": "NOT_READY",
+  "csv_preprocess": {
+    "status": "NOT_READY",
+    "data_dir": "Data\\TEP\\preprocess_data",
+    "n_csv": 0,
+    "n_normal": 0,
+    "n_abnormal": 0,
+    "n_unknown": 0,
+    "length_distribution": {},
+    "feature_dim_distribution": {},
+    "header_rows_distribution": {},
+    "invalid_files": [],
+    "nan_inf_files": [],
+    "loader_batch_check": {
+      "status": "SKIPPED_EMPTY"
+    }
+  },
+  "btd_payloads": {
+    "status": "NOT_READY",
+    "processed_dir": "Data\\TEP\\processed",
+    "uniform": {
+      "status": "NOT_READY",
+      "path": "Data\\TEP\\processed\\tep_uniform_btd.pt",
+      "exists": false
+    },
+    "nonuniform": {
+      "status": "NOT_READY",
+      "path": "Data\\TEP\\processed\\tep_nonuniform_btd.pt",
+      "exists": false
+    }
+  },
+  "check_only": true,
+  "created_at": "2026-05-24T21:21:11.757289"
+}

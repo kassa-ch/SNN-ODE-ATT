@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-05-24T17:06:48.864968",
+  "shape_contract": "Each output CSV is one [T,D] sample. TimeSeriesDataset batches them into [B,T,D].",
+  "summaries": [
+    {
+      "dataset": "HAI",
+      "origin_dir": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\HAI\\Origin_Datasets",
+      "output_dir": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\HAI\\preprocess_data",
+      "window_size": 128,
+      "stride": 128,
+      "files_seen": 12,
+      "files_processed": 12,
+      "samples_written": 18111,
+      "samples_skipped_existing": 0,
+      "normal_samples": 17811,
+      "abnormal_samples": 300,
+      "feature_dim": 85,
+      "notes": []
+    },
+    {
+      "dataset": "ST-AWFD",
+      "origin_dir": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\ST-AWFD\\Origin_Datasets",
+      "output_dir": "C:\\Users\\kassa\\Desktop\\SNNODEATT\\Data\\ST-AWFD\\preprocess_data",
+      "files_seen": 2,
+      "files_processed": 2,
+      "samples_written": 6285,
+      "samples_skipped_existing": 0,
+      "normal_samples": 5909,
+      "abnormal_samples": 376,
+      "feature_dim": 22,
+      "notes": []
+    }
+  ],
+  "dataset_state": {
+    "HAI": {
+      "has_origin_datasets": true,
+      "has_preprocess_data": true,
+      "preprocess_csv_count": 18111
+    },
+    "ST-AWFD": {
+      "has_origin_datasets": true,
+      "has_preprocess_data": true,
+      "preprocess_csv_count": 6285
+    },
+    "SWaT": {
+      "has_origin_datasets": false,
+      "has_preprocess_data": false,
+      "preprocess_csv_count": 0
+    },
+    "TEP": {
+      "has_origin_datasets": true,
+      "has_preprocess_data": true,
+      "preprocess_csv_count": 0
+    },
+    "WADI": {
+      "has_origin_datasets": false,
+      "has_preprocess_data": false,
+      "preprocess_csv_count": 0
+    },
+    "Wafer": {
+      "has_origin_datasets": false,
+      "has_preprocess_data": true,
+      "preprocess_csv_count": 1252
+    }
+  }
+}
